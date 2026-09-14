@@ -1,0 +1,25 @@
+{
+  "name": "opencode-visual-design-validator",
+  "version": "1.0.0",
+  "description": "OpenCode plugin for automated visual design validation using Playwright",
+  "type": "module",
+  "main": "dist/plugin.js",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "install-browsers": "npx playwright install chromium"
+  },
+  "dependencies": {
+    "playwright": "^1.48.0",
+    "zod": "^4.1.8"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "jiti": "^2.7.0",
+    "tsx": "^4.23.13",
+    "typescript": "^5.6.0"
+  },
+  "peerDependencies": {
+    "@opencode-ai/plugin": ">=0.1.0"
+  }
+}
